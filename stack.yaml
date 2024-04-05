@@ -1,0 +1,15 @@
+
+resolver: lts-22.13
+
+packages:
+- .
+
+extra-deps:
+- git: https://github.com/codedownio/beam.git
+  # codedown-jan-2024-ghc96 branch
+  commit: 7a4f713980891f0a5fc98992a36fb3dcbc9e8777
+  subdirs:
+  - beam-core
+  - beam-migrate
+  - beam-postgres
+  - beam-sqlite
